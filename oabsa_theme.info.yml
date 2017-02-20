@@ -1,7 +1,7 @@
-name: Bear Skin 8 Base Theme w/ Pattern Lab
+name: OA Theme w/ Pattern Lab
 type: theme
-description: 'An atomic design Drupal 8 base theme including Pattern Lab.'
-package: Bear
+description: 'Custom Drupal 8 theme for the Order of the Arrow website'
+package: Custom
 core: 8.x
 
 libraries:

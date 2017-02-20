@@ -12,7 +12,7 @@ the ```_gutenberg-config.scss```. The other files should usually remain unmodifi
 If you care to be consistent with the vertical rhythm of your site and avoid hard pixel values for your line heights, 
 font sizes, margins and paddings, you should use the mixins provided by Gutenberg. ex: ```@include margin-bottom(1);```
 
-The other external library included with Bear Skin is [flexbox grid](http://flexboxgrid.com/). You can find the file 
+The other external library included with OA Theme is [flexbox grid](http://flexboxgrid.com/). You can find the file 
 in ```components/vendor/bower/css```. It is in use for our layouts but also contains the flexbox reusable classes for 
 further styling.
 

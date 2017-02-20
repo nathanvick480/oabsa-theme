@@ -22,7 +22,7 @@
   // create an option to choose between fixed and fluid layouts
   $form['oabsa_theme_options']['ui'] = array(
     '#type' => 'radios',
-    '#title' => t('UI -- Bear Skin comes either as a base theme or with a UI, which supports most of the default Drupal components.'),
+    '#title' => t('UI -- OA Theme comes either as a base theme or with a UI, which supports most of the default Drupal components.'),
     '#description' => t('Choose among the following options to add an user interface to the base theme.<br><br>'),
     '#options' => array(
       'no_ui' => t('No UI'),

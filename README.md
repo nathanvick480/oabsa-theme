@@ -32,6 +32,61 @@ install it prior to enabling the theme. Additionally, you will need to enable bo
 
 When ready to work, refer to [Gulp tasks for front-end development](docs/gulp.md) to get started.
 
+## Installation Instructions
+
+We are assuming here you have already installed Drupal 8 and it is running on your development server. To begin 
+installing this theme, navigate to the themes directory (`cd themes`). If you wish, you can add a new directory for 
+your custom themes (`mkdir custom && cd custom`).
+
+Now install the theme files using: 
+
+```bash
+git clone https://github.com/oabsa/oabsa-theme.git oabsa_theme
+```
+
+Change directories to where your put your theme.
+
+```bash
+cd oabsa_theme
+```
+
+Edit line 1 of `gulpfile.js`, replacing `your-site.tld` with the domain of your local site.
+
+Now install all of the Node.js modules we need. (This will take a while.)
+
+```bash
+npm install
+```
+
+Finally, set up Pattern Lab.
+
+```bash
+gulp generate-pattern-lab
+```
+
+You're now ready to visit your Drupal site and enable the new theme.
+
+## Post-installation Notes
+
+Running `npm install` and `gulp install` will add several files in directories called node_modules. The .gitignore file 
+in your theme will prevent these files from being added to your repo. This is intentional because the files are only 
+needed for development. 
+
+If you are adding developers on a team who are editing the theme, after they have cloned your site's repo they will 
+need to navigate to the theme directory and run these commands:
+
+```bash
+npm install
+```
+As well as either
+```bash
+gulp generate-pattern-lab
+```
+or
+```bash
+gulp build-dev
+```
+
 ## Documentation
 
 1. [Enabling dev mode](docs/dev_mode.md) in Drupal 8 to provide template suggestions and disabling the cache
