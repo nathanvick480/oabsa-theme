@@ -13,7 +13,7 @@ dependencies:
   theme:
     - oabsa_theme
 id: oabsa_theme_responsive_banner
-label: 'Bearskin8pl - Responsive Banner'
+label: 'OA Theme - Responsive Banner'
 image_style_mappings:
   -
     breakpoint_id: oabsa_theme.large
