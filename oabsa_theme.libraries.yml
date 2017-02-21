@@ -2,7 +2,7 @@ global-styles:
   version: 1.x
   css:
     theme:
-      css/web-fonts.css:
+      css/fonts.css:
         minified: true
       css/oabsa_theme.css:
         minified: false
