@@ -19,9 +19,12 @@ This repo includes:
 
 ## Getting started
 
-Before getting started, make sure that you have the latest version of [node.js](https://nodejs.org) and 
-[yeoman](http://yeoman.io) installed. It is preferred to install node via [n](https://www.npmjs.com/package/n) 
-using `curl -L http://git.io/n-install | bash`.  
+Before getting started, make sure that you have the latest version installed of:
+* [node.js](https://nodejs.org) 
+* [yeoman](http://yeoman.io)
+* [bower](https://bower.io)
+
+It is preferred to install node via [n](https://www.npmjs.com/package/n) using `curl -L http://git.io/n-install | bash`.  
 
 Also, you will need to have [composer](https://getcomposer.org/doc/00-intro.md) installed. On a Mac, this is easiest 
 with [homebrew](http://brew.sh/).
@@ -50,42 +53,13 @@ Change directories to where your put your theme.
 cd oabsa_theme
 ```
 
-Edit line 1 of `gulpfile.js`, replacing `your-site.tld` with the domain of your local site.
-
 Now install all of the Node.js modules we need. (This will take a while.)
 
 ```bash
 npm install
 ```
 
-Finally, set up Pattern Lab.
-
-```bash
-gulp generate-pattern-lab
-```
-
 You're now ready to visit your Drupal site and enable the new theme.
-
-## Post-installation Notes
-
-Running `npm install` and `gulp install` will add several files in directories called node_modules. The .gitignore file 
-in your theme will prevent these files from being added to your repo. This is intentional because the files are only 
-needed for development. 
-
-If you are adding developers on a team who are editing the theme, after they have cloned your site's repo they will 
-need to navigate to the theme directory and run these commands:
-
-```bash
-npm install
-```
-As well as either
-```bash
-gulp generate-pattern-lab
-```
-or
-```bash
-gulp build-dev
-```
 
 ## Documentation
 
