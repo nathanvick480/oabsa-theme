@@ -44,13 +44,13 @@ your custom themes (`mkdir custom && cd custom`).
 Now install the theme files using: 
 
 ```bash
-git clone https://github.com/oabsa/oabsa-theme.git oabsa_theme
+git clone https://github.com/oabsa/oabsa-theme.git oabsa-theme
 ```
 
 Change directories to where your put your theme.
 
 ```bash
-cd oabsa_theme
+cd oabsa-theme
 ```
 
 Now install all of the Node.js modules we need. (This will take a while.)
