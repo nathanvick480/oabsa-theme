@@ -117,6 +117,12 @@
             color: #000000;
         }
         
+        @media (max-width: 768px) {
+            .secondary-nav-link, .secondary-nav-search {
+                display: none;
+            }
+        }
+        
         .grid-item {
             text-align: center;
             background: none;
@@ -156,7 +162,7 @@
             padding-top: 5px;
         }
         
-        #bgcfooter {
+        .footer {
             width:100%;
             text-align:left;
             font-size: 13px;
@@ -167,7 +173,7 @@
             padding-top:25px;
         }
     
-        #bgcfooter-sub {
+        .footer-sub {
             padding-top: 25px;
             padding-bottom: 20px;
             text-align: center;
@@ -199,14 +205,14 @@
         .footer-socialmedia i {
             padding-right: 5px;
             font-size: 30px;
+            transition: all 0.25s;
         }
-
-        .unitedway-text {
-            text-transform: none;
-            font-size: 11px;
-            font-style: italic;
-            padding-top: 7px;
+        
+        .footer-socialmedia i:hover {
+            color: #eea62a;
         }
+        
+        
 
     </style>
   
@@ -218,8 +224,8 @@
     <div class="secondary-nav-container">
         <div class="row secondary-nav-row">
             <div class="col-lg-12 secondary-nav">
-                <div class="secondary-nav-item">Trading Post</div>
-                <div class="secondary-nav-item">Calendar</div>
+                <div class="secondary-nav-item secondary-nav-link">Trading Post</div>
+                <div class="secondary-nav-item secondary-nav-link">Calendar</div>
                 <div class="secondary-nav-item secondary-nav-socialmedia">
                     <i class="fa fa-facebook-square"></i>
                     <i class="fa fa-twitter-square"></i>
@@ -227,7 +233,7 @@
                     <i class="fa fa-snapchat-square"></i>
                     <i class="fa fa-youtube-square"></i>
                 </div>
-                <div class="secondary-nav-item">
+                <div class="secondary-nav-item secondary-nav-search">
                     <form>
                         <input type="text" name="search" id="search" placeholder="Search website" />
                     </form>
@@ -314,7 +320,6 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-
     
 <div class="container-fluid">
     <div class="row">
@@ -377,7 +382,7 @@
     </div>
 </div>
     
-<div class="container-fluid" id="bgcfooter">
+<div class="container-fluid footer">
     <div class="row" style="width:100%; max-width: 1000px; margin:auto;">
         <div class="col-sm-4">
             <h4>Quick Links</h4>
@@ -413,75 +418,18 @@
                 <i class="fa fa-tumblr-square fa-2x"></i>
             </p>
             <ul class="footer-links fa-ul">
-                <li><a href="tel:859-231-7811"><i class="fa-li fa fa-phone">&nbsp;</i>Phone: (859) 231-7811</a></li>
-                <li><a href="tel:859-252-3785"><i class="fa-li fa fa-fax">&nbsp;</i>Fax: (859) 252-3785</a></li>
-                <li><a href="https://www.google.com/maps/place/Blue+Grass+Council,+Boy+Scouts+of+America/@38.0094772,-84.5187752,17z/data=!3m1!4b1!4m5!3m4!1s0x88425aa04742412d:0x857d709f125ff359!8m2!3d38.0094772!4d-84.5165865" target="_blank"><i class="fa-li fa fa-map-marker">&nbsp;</i>2134 Nicholasville Rd.<br />Suites 3 &amp; 4<br />Lexington, KY 40503</a></li>
+                <li><a href="tel:972-580-2438"><i class="fa-li fa fa-phone">&nbsp;</i>Phone: (972) 580-2438</a></li>
+                <li><a href="tel:972-580-2399"><i class="fa-li fa fa-fax">&nbsp;</i>Fax: (972) 580-2399</a></li>
+                <li><i class="fa-li fa fa-map-marker">&nbsp;</i>Order of the Arrow, S325<br />1325 West Walnut Hill Lane<br />Irving, TX 75015-2079</li>
             </ul>
         </div>
     </div>
-    <div class="row">
-        <div style="col-lg-12" id="bgcfooter-sub">
+    <div class="row footer-sub">
+        <div style="col-lg-12">
             <p style="margin-bottom: 0px;">Copyright &copy; 1997-2017, Order of the Arrow, Boy Scouts of America &bull; All Rights Reserved &bull; Site Info &amp; Policies</p>
         </div>
     </div>
 </div>
-  
-<div id="footer">
-  <div class="container">
-    <div class="row">
-	
-        <div class="col-xs-12 col-sm-4 col-md-4 grid-item">
-			<h4><a href="#" class="title">Quick Links</a></h4>
-			<nav>
-				<ul class="list-unstyled">
-					<li class="item"><a href="#" class="title">Calendar</a></li>
-					<li class="item"><a href="#" class="title">Membership Info</a></li>
-					<li class="item"><a href="#" class="title">Find a Lodge</a></li>
-					<li class="item"><a href="#" class="title">Journey to Excellence</a></li>
-					<li class="item"><a href="#" class="title">Publications</a></li>
-					<li class="item"><a href="#" class="title">Forms</a></li>
-				</ul>
-			</nav>
-		</div>
-		
-		<div class="col-xs-12 col-sm-4 col-md-4 grid-item">
-			<h4><a href="#" class="title">Organization Links</a></h4>
-			<nav>
-				<ul class="list-unstyled">
-					<li class="item"><a href="#" class="title">Central Region</a></li>
-					<li class="item"><a href="#" class="title">Northeast Region</a></li>
-					<li class="item"><a href="#" class="title">Southern Region</a></li>
-					<li class="item"><a href="#" class="title">Western Region</a></li>
-					<li class="item"><a href="#" class="title">OA Trading Post</a></li>
-					<li class="item"><a href="#" class="title">Boy Scouts of America</a></li>
-					
-				</ul>
-			</nav>
-		</div>
-		
-		<div class="col-xs-12 col-sm-4 col-md-4 grid-item">
-			<h4><a href="http://wp.sectionw1n.org/resources/" class="title">Connect With Us</a></h4>
-		</div>
-		
-		<div class="col-xs-12 col-sm-4 col-md-4 grid-item">
-			<h4><a href="http://wp.sectionw1n.org/contact-us/" class="title">Contact Our Office</a></h4>
-		</div>
-    </div>
 
-	<div class="row">
-      <div class="col-xs-12 description">
-        <h2>Scouting's National Honor Society</h2>
-	  </div>
-    </div>
-	
-    <div class="row">
-      <div class="col-xs-12 copyright">
-        Copyright &copy; 1997-2017, Order of the Arrow, Boy Scouts of America. All rights reserved. | <a href="#">Site Info and Policies</a>
-	  </div>
-    </div>
-  </div>
-</div>
-    </div>
-    
-  </body>
+</body>
 </html>
