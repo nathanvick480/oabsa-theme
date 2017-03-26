@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="http://files.libraryforafrica.com/resources/font-awesome-4.7.0/css/font-awesome.min.css">
     
     <style>
+        
+        body {
+            margin-top: 56px;
+            font-family: "Museo Sans", Arial, sans-serif;
+        }
 
         .navbar-fixed-top {
             min-height: 80px;
@@ -111,13 +116,98 @@
             padding-left: 10px;
             color: #000000;
         }
-                
-        body {
-            margin-top: 56px;
+        
+        .grid-item {
+            text-align: center;
+            background: none;
+            display: block;
         }
         
+        .grid-item * {
+            transition: all 0.25s;
+        }
         
-                
+        .grid-item:hover * {
+            color: black;
+        }
+
+        .grid-item .panel-body {
+            padding: 0px;
+        }
+        
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .grid-item p {
+            font-weight: bold;
+            padding-top: 10px;
+            line-height: normal;
+        }
+        
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        h5 {
+            padding-top: 5px;
+        }
+        
+        #bgcfooter {
+            width:100%;
+            text-align:left;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color:#ffffff;
+            background: #36454F;
+            padding-top:25px;
+        }
+    
+        #bgcfooter-sub {
+            padding-top: 25px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 12px;
+            background: rgba(0,0,0,0.4);
+        }
+
+        ul.footer-links {
+            list-style: none;
+        }
+
+        ul.footer-links li {
+            padding-bottom: 5px;
+        }
+
+        ul.footer-links li * {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.25s;
+        }
+        ul.footer-links li:hover * {
+            color: #eea62a;
+        }
+        
+        .footer-socialmedia {
+            padding-left: 5px;
+        }
+        
+        .footer-socialmedia i {
+            padding-right: 5px;
+            font-size: 30px;
+        }
+
+        .unitedway-text {
+            text-transform: none;
+            font-size: 11px;
+            font-style: italic;
+            padding-top: 7px;
+        }
+
     </style>
   
 </head>
@@ -225,82 +315,116 @@
     </a>
 </div>
 
-<div class="container-fluid index">
-  <div class="posts">
-
-    <div class="container" style="background-color:#f3f6fa; padding:0px;">
-	<div class="col-md-8">
-		<div style="max-width:1000px; margin:0px auto;">
-		
-      <div class="row grid">
-		<div class="row" style="margin-left:25px;"><h4><strong>Featured News</strong></h4></div>
-		<div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
-			<div class="panel post">
-				<div class="panel-body" style="background-image: url('http://www.oa-bsa.org/images/featured_images/Success_Stories_web_graphic.jpg');"></div>
-				<strong><a class="post-link" href="#">Youth leaders prepare for Operation Arrow</a></strong>
-			</div>
-		</div>
-		
-		<div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
-			<div class="panel post">
-				<div class="panel-body" style="background-image: url('http://www.oa-bsa.org/images/featured_images/EagleWebTile-01-2016.png');"></div>
-				<h4><a class="post-link" href="#">Jamboree Shows Auditions</a></h4>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
-			<div class="panel post">
-				<div class="panel-body" style="background-image: url('http://www.oa-bsa.org/images/featured_images/2017-Lodge-Service-Grants_Web-Tile.jpg');"></div>
-				<h4><a class="post-link" href="#">Jamboree Shows Auditions</a></h4>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
-			<div class="panel post">
-				<div class="panel-body" style="background-image: url('http://www.oa-bsa.org/images/featured_images/ChooseOA_Web-Tile.jpg');"></div>
-				<h4><a class="post-link" href="#">Jamboree Shows Auditions</a></h4>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
-			<div class="panel post">
-				<div class="panel-body" style="http://www.oa-bsa.org/images/featured_images/ChooseOA_Website_Link_Web-Tile.jpg');"></div>
-				<h4><a class="post-link" href="#">Jamboree Shows Auditions</a></h4>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
-			<div class="panel post">
-				<div class="panel-body"></div>
-				<h4><a class="post-link" href="#">Jamboree Shows Auditions</a></h4>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
-			<div class="panel post">
-				<div class="panel-body"></div>
-				<h4><a class="post-link" href="#">Jamboree Shows Auditions</a></h4>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
-			<div class="panel post">
-				<div class="panel-body"></div>
-				<h4><a class="post-link" href="#">Jamboree Shows Auditions</a></h4>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-4 grid-item">
-			<div class="panel post">
-				<div class="panel-body"></div>
-				<h4><a class="post-link" href="#">Jamboree Shows Auditions</a></h4>
-			</div>
-		</div>
-		
-		</div>
-      </div>
-	  </div>
-	  <div class="col-xs-12 col-sm-12 col-md-4  pull-right" style="padding-right:0px; background-color:#d5d6d8;">
-		<div class="rightsidebar" style="min-width:100%; min-height:100%;">
-			<h5><strong>Recent Updates</strong></h5>
-		</div>
-	  </div>
+    
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8 col-md-8 col-md-offset-1">
+            <h4><strong>Featured News</strong></h4>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <a href="#" class="panel grid-item">
+				        <div class="panel-body">
+                            <img src="http://www.oa-bsa.org/images/featured_images/Success_Stories_web_graphic.jpg" />
+                            <p class="grid-title">Youth leaders prepare for Operation Arrow</p>
+                        </div>
+			         </a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <a href="#" class="panel grid-item">
+				        <div class="panel-body">
+                            <img src="http://www.oa-bsa.org/images/featured_images/EagleWebTile-01-2016.png" />
+                            <p class="grid-title">Youth leaders prepare for Operation Arrow</p>
+                        </div>
+			         </a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <a href="#" class="panel grid-item">
+				        <div class="panel-body">
+                            <img src="http://www.oa-bsa.org/images/featured_images/Success_Stories_web_graphic.jpg" />
+                            <p class="grid-title">Youth leaders prepare for Operation Arrow</p>
+                        </div>
+			         </a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <a href="#" class="panel grid-item">
+				        <div class="panel-body">
+                            <img src="http://www.oa-bsa.org/images/featured_images/Success_Stories_web_graphic.jpg" />
+                            <p class="grid-title">Youth leaders prepare for Operation Arrow</p>
+                        </div>
+			         </a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <a href="#" class="panel grid-item">
+				        <div class="panel-body">
+                            <img src="http://www.oa-bsa.org/images/featured_images/Success_Stories_web_graphic.jpg" />
+                            <p class="grid-title">Youth leaders prepare for Operation Arrow</p>
+                        </div>
+			         </a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <a href="#" class="panel grid-item">
+				        <div class="panel-body">
+                            <img src="http://www.oa-bsa.org/images/featured_images/Success_Stories_web_graphic.jpg" />
+                            <p class="grid-title">Youth leaders prepare for Operation Arrow</p>
+                        </div>
+			         </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-3" style="padding-right:0px; background-color:#d5d6d8;">
+            <h5><strong>Recent Updates</strong></h5>
+        </div>
     </div>
-  </div>    
+</div>
+    
+<div class="container-fluid" id="bgcfooter">
+    <div class="row" style="width:100%; max-width: 1000px; margin:auto;">
+        <div class="col-sm-4">
+            <h4>Quick Links</h4>
+            <ul class="footer-links fa-ul">
+                <li><a href="#"><i class="fa-li fa fa-calendar">&nbsp;</i>Calendar</a></li>
+                <li><a href="#"><i class="fa-li fa fa-users">&nbsp;</i>Membership Information</a></li>
+                <li><a href="#"><i class="fa-li fa fa-map-pin">&nbsp;</i>Find a Lodge</a></li>
+                <li><a href="#"><i class="fa-li fa fa-trophy">&nbsp;</i>Journey to Excellence</a></li>
+                <li><a href="#"><i class="fa-li fa fa-book">&nbsp;</i>Publications</a></li>
+                <li><a href="#"><i class="fa-li fa fa-edit">&nbsp;</i>Forms</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-4">
+            <h4>Organization Links</h4>
+            <ul class="footer-links" style="list-style: none; margin-left: -30px;">
+                <li><a href="#" target="_blank">Central Region</a></li>
+                <li><a href="#" target="_blank">Northeast Region</a></li>
+                <li><a href="#" target="_blank">Southern Region</a></li>
+                <li><a href="#" target="_blank">Western Region</a></li>
+                <li><a href="#" target="_blank">OA Trading Post</a></li>
+                <li><a href="#" target="_blank">Boy Scouts of America</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-4">
+            <h4>Stay Connected</h4>
+            <p class="footer-socialmedia">
+                <i class="fa fa-facebook-square fa-2x"></i>
+                <i class="fa fa-twitter-square fa-2x"></i>
+                <i class="fa fa-instagram fa-2x"></i>
+                <i class="fa fa-youtube-square fa-2x"></i>
+                <i class="fa fa-snapchat-square fa-2x"></i>
+                <i class="fa fa-flickr fa-2x"></i>
+                <i class="fa fa-tumblr-square fa-2x"></i>
+            </p>
+            <ul class="footer-links fa-ul">
+                <li><a href="tel:859-231-7811"><i class="fa-li fa fa-phone">&nbsp;</i>Phone: (859) 231-7811</a></li>
+                <li><a href="tel:859-252-3785"><i class="fa-li fa fa-fax">&nbsp;</i>Fax: (859) 252-3785</a></li>
+                <li><a href="https://www.google.com/maps/place/Blue+Grass+Council,+Boy+Scouts+of+America/@38.0094772,-84.5187752,17z/data=!3m1!4b1!4m5!3m4!1s0x88425aa04742412d:0x857d709f125ff359!8m2!3d38.0094772!4d-84.5165865" target="_blank"><i class="fa-li fa fa-map-marker">&nbsp;</i>2134 Nicholasville Rd.<br />Suites 3 &amp; 4<br />Lexington, KY 40503</a></li>
+            </ul>
+        </div>
     </div>
+    <div class="row">
+        <div style="col-lg-12" id="bgcfooter-sub">
+            <p style="margin-bottom: 0px;">Copyright &copy; 1997-2017, Order of the Arrow, Boy Scouts of America &bull; All Rights Reserved &bull; Site Info &amp; Policies</p>
+        </div>
+    </div>
+</div>
   
 <div id="footer">
   <div class="container">
@@ -357,6 +481,7 @@
     </div>
   </div>
 </div>
+    </div>
     
   </body>
 </html>
