@@ -24,6 +24,7 @@
         body {
             margin-top: 56px;
             font-family: "Museo Sans", Arial, sans-serif;
+            letter-spacing: 0.02em;
         }
         
         a {
@@ -35,8 +36,13 @@
             text-decoration: none;
             color: #231F20;
         }
+        
+        .container-fluid.main-container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
 
-        .navbar-fixed-top {
+        .navbar {
             min-height: 80px;
             background: #E31837;
             margin-top: 0px;
@@ -77,8 +83,9 @@
         }
         
         .navbar-brand img {
-            height: 50px;
-            width: auto;
+            width: 95%; 
+            max-width: 350px; 
+            height: auto;
         }
         
        .navbar-container{
@@ -147,6 +154,22 @@
             }
         }
         
+        .carousel-control {
+            background-image: none !important;
+        }
+        
+        .carousel-control:hover {
+            background-image: none;
+        }
+        
+        .carousel-control .glyphicon-chevron-left {
+            margin-left: -50px;
+        }
+        
+        .carousel-control .glyphicon-chevron-right {
+            margin-right: -50px;
+        }
+        
         .grid-item {
             text-align: center;
             background: none;
@@ -184,6 +207,20 @@
         
         h5 {
             padding-top: 5px;
+            font-weight: 700;
+        }
+        
+        .recent-news {
+            margin-top: 58px;
+        }
+        
+        .recent-news .panel-heading {
+            background: #E6E7E8;
+        }
+        
+        .recent-news h5 {
+            line-height: 0px;
+            padding-bottom: 0px !important;
         }
         
         ul.news-list {
@@ -194,12 +231,13 @@
         .news-title {
             font-weight: 600;
             padding: 0px;
+            display: block;
         }
         
         .news-date {
             font-weight: 300;
-            padding-left: 10px;
-            text-indent: 10px;
+            padding-left: 0px;
+            display: block;
         }
         
         .footer {
@@ -362,9 +400,9 @@
     </a>
 </div>
     
-<div class="container-fluid">
+<div class="container-fluid main-container">
     <div class="row">
-        <div class="col-sm-8 col-md-8 col-md-offset-1">
+        <div class="col-sm-8 col-md-8">
             <h4><strong>Featured News</strong></h4>
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-lg-4">
@@ -417,16 +455,32 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4 col-md-3" style="padding-right:0px; background-color:#d5d6d8;">
-            <h5><strong>Recent Updates</strong></h5>
-            <ul class="news-list">
-                <li><span class="news-title">News item</span><br /><span class="news-date">March 26, 2017</span></li>
-                <li><span class="news-title">News item</span><br /><span class="news-date">March 26, 2017</span></li>
-                <li><span class="news-title">News item</span><br /><span class="news-date">March 26, 2017</span></li>
-                <li><span class="news-title">News item</span><br /><span class="news-date">March 26, 2017</span></li>
-                <li><span class="news-title">News item</span><br /><span class="news-date">March 26, 2017</span></li>
-                <li><span class="news-title">News item</span><br /><span class="news-date">March 26, 2017</span></li>
-            </ul>
+        <div class="col-sm-4 col-md-4">
+            <div class="panel panel-default recent-news">
+                <div class="panel-heading"><h5>Recent Updates</h5></div>
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="news-title">Ajapeu Lodge clears trails for a running start on service</span>
+                    <span class="news-date">March 26, 2017</span>
+                    </li>
+                <li class="list-group-item">
+                    <span class="news-title">Malibu Lodge hosts spooky fundraiser</span>
+                    <span class="news-date">March 26, 2017</span>
+                    </li>
+                <li class="list-group-item">
+                    <span class="news-title">Lodge Success Stories: Reaching Gold</span>
+                    <span class="news-date">March 26, 2017</span>
+                    </li>
+                <li class="list-group-item">
+                    <span class="news-title">BSA announces key staff arrival and departure dates</span>
+                    <span class="news-date">March 26, 2017</span>
+                    </li>
+                <li class="list-group-item">
+                    <span class="news-title">Operation Essentials - What to pack #5</span>
+                    <span class="news-date">March 26, 2017</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
